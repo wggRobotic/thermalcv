@@ -26,12 +26,12 @@ class RedObjectDetectorNode(Node):
         )
         self.test_timer = None
 
-        # --- VARIANTE B: Testbild-Modus (Zum Testen einkommentieren, Variante A auskommentieren) ---
-        self.subscription = None
-        # Ruft die Methode 10-mal pro Sekunde (0.1s Intervall) mit einer Dummy-Nachricht auf
-        self.test_timer = self.create_timer(0.1, lambda: self.image_callback(None))
-        # Pfad zu deinem Testbild auf der Festplatte anpassen:
-        self.test_image_path = '/home/corvus/Downloads/image.png'
+        # # --- VARIANTE B: Testbild-Modus (Zum Testen einkommentieren, Variante A auskommentieren) ---
+        # self.subscription = None
+        # # Ruft die Methode 10-mal pro Sekunde (0.1s Intervall) mit einer Dummy-Nachricht auf
+        # self.test_timer = self.create_timer(0.1, lambda: self.image_callback(None))
+        # # Pfad zu deinem Testbild auf der Festplatte anpassen:
+        # self.test_image_path = '/home/corvus/Downloads/image.png'
         
         self.get_logger().info('Red Object Detector Node wurde gestartet.')
 
